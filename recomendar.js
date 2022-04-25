@@ -18,7 +18,7 @@ function recomendar() {
         var button = document.evaluate(xpath, document.body, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null) 
         
         // Verifica se o texto do botão é igual a "Recomendar competência)
-        if (button.singleNodeValue.innerText == "Recomendar competência") {
+        if (button.singleNodeValue.innerText == "Recomendar competência" || button.singleNodeValue.innerText == "Endorse") {
             // Clica no botão
             button.singleNodeValue.click()    
         }
